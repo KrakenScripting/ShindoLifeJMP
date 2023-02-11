@@ -1,0 +1,14 @@
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/KrakenScripting/Shindo-Life/main/Infinite%20Jump",true))();
+
+local Player = game:GetService("Players").LocalPlayer
+local Mouse = Player:GetMouse()
+Mouse.KeyDown:connect(function(k)
+k = k:lower()
+if k == "f" then                               --replace "f" with the keybind you want
+if _G.infinjump == true then
+_G.infinjump = false
+else
+_G.infinjump = true
+end
+end
+end)
